@@ -1,9 +1,8 @@
 package nsru.demsomboon.ratchasak.phijitcoffee;
 
 import android.content.Intent;
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -25,7 +24,7 @@ public class CheckMoney extends AppCompatActivity {
     //Explicit
     private TextView moneyTextView, nameTextView;
     private String moneyString, nameString, surnameString, addressString, idLoginString, jsonString;
-    private static final String urlPHP = "http://www.swiftcodingthai.com/aon/get_user_where.php";
+    private static final String urlPHP = "http://swiftcodingthai.com/aon/getUserWhereID.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
