@@ -40,7 +40,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private class CheckUser extends AsyncTask<Void, Void, String> {
 
-        private String urlJSON ="http://swiftcodingthai.com/aon/php_get_user_master.php";
+        private String urlJSON ="http://swiftcodingthai.com/aon/getUser.php";
         private  boolean statusABoolean=false;
         @Override
         protected String doInBackground(Void... voids) {
@@ -139,7 +139,7 @@ public class SignUpActivity extends AppCompatActivity {
                 .add("Password", passString)
                 .build();
         Request.Builder builder = new Request.Builder();
-        Request request = builder.url("http://swiftcodingthai.com/aon/php_add_user_master.php").post(requestBody).build();
+        Request request = builder.url("http://swiftcodingthai.com/aon/addUser.php").post(requestBody).build();
         Call call = okHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override

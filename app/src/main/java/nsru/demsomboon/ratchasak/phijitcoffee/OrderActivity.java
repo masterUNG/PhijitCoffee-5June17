@@ -93,7 +93,7 @@ public class OrderActivity extends AppCompatActivity {
             try {
                 OkHttpClient okHttpClient = new OkHttpClient();
                 Request.Builder builder = new Request.Builder();
-                Request request = builder.url("http://swiftcodingthai.com/aon/php_get_coffee_aon.php").build();
+                Request request = builder.url("http://swiftcodingthai.com/aon/getCoffee.php").build();
                 Response response = okHttpClient.newCall(request).execute();
                 return response.body().string();
 

@@ -30,8 +30,8 @@ public class ComfirmOrder extends AppCompatActivity {
     private String[] coffeeString, priceString, amountString, idStrings;
     private int[] priceInts, amountInts, totalInts;
     private int sumaryTotal, moneyAnInt;
-    private static final String urlOrderTABLE = "http://www.swiftcodingthai.com/aon/add_order.php";
-    private static final String urlEditMoney = "http://www.swiftcodingthai.com/aon/edit_money.php";
+    private static final String urlOrderTABLE = "http://swiftcodingthai.com/aon/addOrder.php";
+    private static final String urlEditMoney = "http://swiftcodingthai.com/aon/editMoneyWhereID.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

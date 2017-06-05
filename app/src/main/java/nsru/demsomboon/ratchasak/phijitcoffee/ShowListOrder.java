@@ -20,7 +20,7 @@ import org.json.JSONObject;
 public class ShowListOrder extends AppCompatActivity {
     //Explict
     private  String nameLoginString;
-    private static final String url="http://swiftcodingthai.com/aon/get_order_where_name.php";
+    private static final String url="http://swiftcodingthai.com/aon/getOrderWhereName.php";
     private ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
